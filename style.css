@@ -154,3 +154,35 @@ footer {
   padding: 1rem;
   margin-top: 2rem;
 }
+
+.project-buttons {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.project-buttons .btn {
+  padding: 0.5rem 1rem;
+  background: #fca311;
+  color: #111;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.project-buttons .btn:hover {
+  background: #ffbf47;
+}
+
+.project-buttons .btn.secondary {
+  background: transparent;
+  border: 2px solid #fca311;
+  color: #fca311;
+}
+
+.project-buttons .btn.secondary:hover {
+  background: #fca311;
+  color: #111;
+}

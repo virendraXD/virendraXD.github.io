@@ -1,6 +1,7 @@
 <!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
 </head>
+
 <body>
   <!-- Header Section -->
   <header>
@@ -24,9 +26,17 @@
   <!-- Hero Section -->
   <section id="hero">
     <div class="hero-content">
-      <h2>Hello, I'm <span class="highlight">Virendra</span> 👋</h2>
-      <p>A passionate student, developer, and creator.</p>
-      <a href="#projects" class="btn">View My Work</a>
+      <h2>Hello world, I'm <span class="highlight">Virendra</span> 👋</h2>
+      <p><span id="typed"></span></p>
+      <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+      <script>
+        var typed = new Typed("#typed", {
+          strings: ["CSE Student", "Web Developer", "Minecraft Modder", "AI Bot Builder"],
+          typeSpeed: 50,
+          backSpeed: 30,
+          loop: true
+        });
+      </script>
     </div>
   </section>
 
@@ -34,8 +44,8 @@
   <section id="about">
     <h2>About Me</h2>
     <p>
-      I'm a CSE student who loves coding, freelancing, and building cool projects. 
-      I explore web development, mobile apps, and open-source projects. 
+      I'm a CSE student who loves coding, freelancing, and building cool projects.
+      I explore web development, mobile apps, and open-source projects.
     </p>
   </section>
 
@@ -44,14 +54,26 @@
     <h2>My Projects</h2>
     <div class="projects-grid">
       <div class="project-card">
-        <h3>📂 Project 1</h3>
-        <p>Short description of your project here.</p>
-        <a href="#" target="_blank">View Project</a>
+        <h3>🤖 Aisha - Minecraft AI Bot</h3>
+        <p>
+          A survival-style Minecraft bot powered with AI chat, pathfinding, combat, and
+          automation. Behaves like a real player with Hinglish chat and adaptive actions.
+        </p>
+        <div class="project-buttons">
+          <a href="https://github.com/virendraXD/AishaBot" target="_blank" class="btn">Source Code</a>
+          <a href="https://youtu.be/demo-link" target="_blank" class="btn secondary">Demo / Preview</a>
+        </div>
       </div>
       <div class="project-card">
-        <h3>📂 Project 2</h3>
-        <p>Another project with a description.</p>
-        <a href="#" target="_blank">View Project</a>
+        <h3>🏠 KnightHomes - Minecraft Plugin</h3>
+        <p>
+          A simple and modern home system plugin for survival servers.  
+          Set, manage, and teleport to multiple homes with an intuitive GUI and sounds.
+        </p>
+        <div class="project-buttons">
+          <a href="https://github.com/virendraXD/KnightHomes" target="_blank" class="btn">Source Code</a>
+          <a href="https://www.spigotmc.org/resources/knighthomes.12345/" target="_blank" class="btn secondary">Demo / Preview</a>
+        </div>
       </div>
       <div class="project-card">
         <h3>📂 Project 3</h3>
@@ -77,4 +99,5 @@
     <p>© 2025 Virendra | Built with ❤️</p>
   </footer>
 </body>
+
 </html>
